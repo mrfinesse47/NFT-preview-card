@@ -1,4 +1,10 @@
 .card {
   background-color: #000;
 }
+
+@media only screen and (max-width: 767px) {
+  .card {
+    background-color: aqua;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
