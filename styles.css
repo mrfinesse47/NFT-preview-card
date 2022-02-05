@@ -1,18 +1,119 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  background-color: #0d192b;
+}
+
 .card {
+  margin: 0 auto;
   width: 350px;
-  height: 596px;
+  border-radius: 15px;
   background-color: #14253d;
+}
+
+.card .container {
+  margin: 24px;
 }
 
 @media only screen and (max-width: 375px) {
   .card {
-    width: 327px;
-    height: 543px;
+    width: 350px;
   }
 }
 
-.card img {
-  margin: 24px;
-  width: 100%;
+.card h2 {
+  color: white;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card .description {
+  font-size: 18px;
+  color: #8bacda;
+  font-weight: 300;
+  margin: 16px 0;
+}
+
+.card .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.card .pricing p {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: block;
+}
+
+.card .pricing img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card .pricing .eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #00fff7;
+}
+
+.card .pricing .eth img {
+  width: 11px;
+  height: 18px;
+  margin: 0;
+}
+
+.card .pricing .eth p {
+  font-weight: 700;
+  padding-left: 6.48px;
+}
+
+.card .pricing .time-remaining {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .pricing .time-remaining img {
+  width: 17px;
+  height: 17px;
+}
+
+.card .pricing .time-remaining p {
+  padding-left: 7.7px;
+  color: #8bacda;
+}
+
+.card .nft-image {
+  width: 302px;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=styles.css.map */
