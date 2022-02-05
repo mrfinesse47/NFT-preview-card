@@ -1,10 +1,18 @@
 .card {
-  background-color: #000;
+  width: 350px;
+  height: 596px;
+  background-color: #14253d;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 375px) {
   .card {
-    background-color: aqua;
+    width: 327px;
+    height: 543px;
   }
+}
+
+.card img {
+  margin: 24px;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

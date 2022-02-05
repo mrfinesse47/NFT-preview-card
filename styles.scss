@@ -2,8 +2,17 @@
 @import "media-queries";
 
 .card {
-  background-color: #000;
+  width: 350px;
+  height: 596px;
   @include mobile {
-    background-color: aqua;
+    width: 327px;
+    height: 543px;
+  }
+
+  background-color: $blue-card;
+
+  img {
+    margin: 24px;
+    width: 100%;
   }
 }
