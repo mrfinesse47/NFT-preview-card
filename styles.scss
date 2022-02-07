@@ -13,9 +13,9 @@ body {
 }
 
 .card {
+  position: relative;
   margin: 0 auto;
   width: 327px;
-  // height: 596px;
   border-radius: 15px;
   background-color: $blue-card;
   .container {
@@ -115,11 +115,36 @@ body {
       }
     }
   }
+
+  .image-overlay {
+    width: 302px;
+    height: 302px;
+    background-color: rgba(0, 255, 248, 0);
+    border-radius: 15px;
+    margin-top: 24px;
+    position: absolute;
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin: 127px;
+      visibility: hidden;
+    }
+  }
+
   @include desktop {
     width: 350px;
 
     .nft-image {
       width: 302px;
+    }
+
+    .image-overlay:hover {
+      cursor: pointer;
+      background-color: rgba(0, 255, 248, 0.5);
+      img {
+        visibility: visible;
+      }
     }
 
     .description {
