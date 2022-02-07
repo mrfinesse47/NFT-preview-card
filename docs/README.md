@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://mrfinesse47.github.io/NFT-preview-card/)
+- Live Site URL: [Here](https://mrfinesse47.github.io/NFT-preview-card/)
 
 ### Built with
 
