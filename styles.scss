@@ -99,6 +99,8 @@ body {
     .avatar {
       img {
         width: 33px;
+        border: 1px solid white;
+        border-radius: 50%;
       }
     }
     .avatar-name {
