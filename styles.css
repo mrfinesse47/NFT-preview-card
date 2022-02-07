@@ -11,19 +11,14 @@ body {
 
 .card {
   margin: 0 auto;
-  width: 350px;
+  width: 327px;
   border-radius: 15px;
   background-color: #14253d;
 }
 
 .card .container {
   margin: 24px;
-}
-
-@media only screen and (max-width: 375px) {
-  .card {
-    width: 350px;
-  }
+  margin-top: 12px;
 }
 
 .card h2 {
@@ -37,7 +32,7 @@ body {
   font-size: 18px;
   color: #8bacda;
   font-weight: 300;
-  margin: 16px 0;
+  margin: 12px 0 16px;
 }
 
 .card .pricing {
@@ -52,6 +47,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #2f415b;
 }
 
 .card .pricing p {
@@ -111,9 +108,69 @@ body {
 }
 
 .card .nft-image {
-  width: 302px;
+  width: 278px;
   border-radius: 15px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.card footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 16px;
+  padding-bottom: 24px;
+}
+
+.card footer .avatar img {
+  width: 33px;
+}
+
+.card footer .avatar-name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 16px;
+}
+
+.card footer .avatar-name p {
+  font-weight: 400;
+  color: #8bacda;
+}
+
+.card footer .avatar-name .name {
+  margin-left: 5px;
+  color: white;
+}
+
+@media only screen and (min-width: 376px) {
+  .card {
+    width: 350px;
+  }
+  .card .nft-image {
+    width: 302px;
+  }
+  .card .description {
+    margin: 16px 0 24px;
+  }
+  .card .pricing {
+    padding-bottom: 24px;
+  }
+  .card footer {
+    padding-bottom: 32px;
+  }
+}
+
+.attribution {
+  color: white;
+  text-align: center;
+}
+
+.attribution a {
+  color: #8bacda;
 }
 /*# sourceMappingURL=styles.css.map */

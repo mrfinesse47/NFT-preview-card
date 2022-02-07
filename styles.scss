@@ -14,17 +14,15 @@ body {
 
 .card {
   margin: 0 auto;
-  width: 350px;
+  width: 327px;
   // height: 596px;
   border-radius: 15px;
   background-color: $blue-card;
   .container {
     margin: 24px;
+    margin-top: 12px;
   }
-  @include mobile {
-    width: 350px;
-    //height: 543px;
-  }
+
   h2 {
     color: $white;
     margin: 0;
@@ -36,7 +34,7 @@ body {
     font-size: 18px;
     color: $soft-blue;
     font-weight: 300;
-    margin: 16px 0;
+    margin: 12px 0 16px;
   }
 
   .pricing {
@@ -44,7 +42,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     color: white;
-
+    padding-bottom: 16px;
+    border-bottom: 1px solid $blue-line;
     p {
       display: block;
       align-self: center;
@@ -86,9 +85,60 @@ body {
   }
 
   .nft-image {
-    width: 302px;
+    width: 278px;
     border-radius: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    padding-bottom: 24px;
+
+    .avatar {
+      img {
+        width: 33px;
+      }
+    }
+    .avatar-name {
+      align-self: center;
+      margin-left: 16px;
+
+      p {
+        font-weight: 400;
+        color: $soft-blue;
+      }
+      .name {
+        margin-left: 5px;
+        color: $white;
+      }
+    }
+  }
+  @include desktop {
+    width: 350px;
+
+    .nft-image {
+      width: 302px;
+    }
+
+    .description {
+      margin: 16px 0 24px;
+    }
+
+    .pricing {
+      padding-bottom: 24px;
+    }
+    footer {
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.attribution {
+  color: $white;
+  text-align: center;
+  a {
+    color: $soft-blue;
   }
 }
